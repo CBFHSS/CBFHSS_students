@@ -157,7 +157,7 @@ def bulletboardreply(event): #顯示公告
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))
 def exam(event):#段考
     today = date.today()
-    the_past = date(2020,5,20)
+    the_past = date(2020,7,9)
     time_to_past= the_past-today
     output="段考還有："+str(time_to_past.days)+"天\n\n"
     output+=googlesheettest.exam()
